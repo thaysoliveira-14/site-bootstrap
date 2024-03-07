@@ -9,3 +9,7 @@ header h1 {
 img.card-img-top {
     height: 400px;
 }
+
+div.card p {
+    text-align: justify;
+}
