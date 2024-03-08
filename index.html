@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body class="bg-light">
-    <header class="bg-black py-2">
+    <header id="header" class="bg-black py-2 fixed-top">
         <nav class="container navbar navbar-expand-md navbar-dark justify-content-md-around justify-content-between mx-3 mx-sm-auto col-auto">
             <h1 class="my-auto navbar-brand">Barraca da Eliana</h1>
             <button class="navbar-toggler btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#menuHambuguer">
@@ -22,7 +22,7 @@
             </button>
             <div class="collapse navbar-collapse" id="menuHambuguer">
                 <ul class="navbar-nav text-start ms-sm-auto text-nowrap">
-                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link active">Sobre nós</a></li>
                     <li class="nav-item"><a href="#produtos" class="nav-link">Produtos</a></li>
                     <li class="nav-item"><a href="processo-fabricacao.html" class="nav-link">Processo de fabricação</a></li>
                     <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
@@ -30,7 +30,8 @@
             </div>
         </nav>
     </header>
-    <main class="container">
+    <div id="invisible" class="invisible"></div>
+    <main class="container" data-bs-spy="scroll" data-bs-target="#header">
         <section id="carrossel" class="carousel slide my-5" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active"></button>
@@ -144,7 +145,6 @@
                 </div>
             </div>
         </section>
-        
     </main>
     <footer id="contato" class="bg-dark text-bg-dark">
             <div class="container pb-3">
@@ -152,17 +152,17 @@
                 <hr>
                 <div class="row mb-5">
                     <div class="col-12 col-lg-4 mb-3">
-                        <h4 class="display-5">Telefone</h4>
+                        <h4 class="display-6">Telefone</h4>
                         <p class="h6 fw-light"><i class="bi bi-telephone"></i> (64) 99905-4162</p>
                     </div>
                     <div class="col-12 col-lg-4 mb-3">
-                        <h4 class="display-5">Endereço</h4>
+                        <h4 class="display-6">Endereço</h4>
                         <p class="h6 fw-light"><i class="bi bi-geo-alt"></i> BR-060, Distrito de Posselândia, Guapó-GO</p>
                     </div>
                     <div class="col-12 col-lg-4 mb-3">
-                        <h4 class="display-5">Redes Sociais</h4>
-                        <a href="#" class="text-decoration-none text-bg-dark fs-1 me-2 me-md-4"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/baraca_da_eliana/" class="text-decoration-none text-bg-dark fs-1" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <h4 class="display-6">Redes Sociais</h4>
+                        <a href="#" class="text-decoration-none text-bg-dark fs-2 me-2 me-md-4"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/baraca_da_eliana/" class="text-decoration-none text-bg-dark fs-2" target="_blank"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
                 <div class="text-center mt-4">

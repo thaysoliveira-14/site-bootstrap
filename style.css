@@ -13,3 +13,8 @@ img.card-img-top {
 div.card p {
     text-align: justify;
 }
+
+div#invisible {
+    width: 941px;
+    height: 72px;
+}
